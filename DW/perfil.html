@@ -11,7 +11,6 @@
             box-sizing: border-box;
             font-family: 'arial', sans-serif;
         }
-        
         body {
             display: flex;
             flex-direction: column;
@@ -19,10 +18,10 @@
             background-color: #dededd;
             color: #E0E0E0;
             padding: 10px;
-
-            /*margin: 0; */
-           
+            /*margin: 0; */           
         }
+        /* fim pagina layout */
+        /* inicio, header */
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -52,6 +51,9 @@
             color: black;
             line-height: 1.3;
         }
+        /* fim header */
+        /* inicio, barra lateral */
+
         .barra-lateral{
             display: flex;
             position: fixed;
@@ -69,7 +71,7 @@
 
         .barra-lateral aside h2{
             font-size: 1.5rem;
-            color: #dededd;
+            color: white;
             margin-bottom: 10px;
         }
         .barra-lateral aside ul {
@@ -85,6 +87,8 @@
             color:#6A0DAD;
             font-weight: bold;
         }
+        /* fim barra lateral */
+        /* inicio infomações a  esquerda */
 
         .conteudo-perfil{
             position: absolute;
@@ -93,7 +97,7 @@
             padding: 20px;
             border-radius: 15px 0 0 15px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
-            color: #dededd;
+            color: white;
             width: 260px;
             background-color: #130f3a;
         }
@@ -111,11 +115,14 @@
         .conteudo-perfil p strong{
             color: #E0E0E0;
         }
+        /* fim, informaões */
+        /* inicio cards main */
 
         .cards{
-           display: flex;
+        display: flex;
+           flex-direction: column;
            justify-content: center;
-           gap: 20px;
+           gap: 10px;
            width: 90%;
            max-width: 900px;
            margin-top: 30px;
@@ -142,6 +149,8 @@
         .card p{
             color: white;
         }
+        /* fim, cards main */
+        /* inicio footer */
 
         footer{
             background-color:  #130f3a;
@@ -158,17 +167,17 @@
 
             /*background: linear-gradient(135deg, #D6D6D6, #A58EDC);*/
         }
-
-        
-    
+        /* final footer (rodapé) */
+        /* meu style.css não funcinou, por isso coloquei aqui */
     </style>
 
 </head>
 <body>
-   <div class="container">
+   <header class="container">
         <img src="img/foto.png" alt="">
         <h1>Olá! Sou <span> Nora Margaro </span></h1>
         <p>Uma desenvolvedora web apaixonado por criar experiências digitais inovadoras. Com experiência em HTML, CSS e JavaScript, adoro transformar ideias em interfaces intuitivas e funcionais.</p>
+    </header>
     <div class="conteudo-perfil">
         <aside>
             <h2>Infomações Contato: </h2>
@@ -181,7 +190,7 @@
          <main class="cards">
             <section class="card">
                 <h2>Biografa</h2>
-                <p> BiografiaPessoal tenho 20 anos e gosto de aprender linguagens novas de programação</p>
+                <p>Tenho 20 anos e gosto de aprender linguagens novas de programação, gosto de cobinar interfaces funcionais e intuitivas alem de ser defensora do aprendizado continuo.</p>
             </section>
             <section class="card">
                 <h2> Experiencias</h2>
@@ -189,12 +198,9 @@
             </section>
             <section class="card">
                 <h2>Projetos</h2>
-                <p>Desenvolvimento de um aplicativo mobile para uma startup</p>
+                <p>Desenvolvimento de um aplicativo mobile para uma startup do mercado de Cafe</p>
             </section>
-            <section class="card">
-                <h2>Ultimos Cursos </h2>
-                <p> DBAMYSQL, ReactNative, Next.js</p>
-            </section>
+            
         </main> 
 
      <div class="barra-lateral">
@@ -218,7 +224,7 @@
                 <li>Font-End developed</li>
             </ul>
         </aside>
-    </div> 
+   
    
     
     <footer>
