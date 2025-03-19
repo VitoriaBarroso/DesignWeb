@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Pessoal! portifolio </title>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'arial', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #dededd;
+            color: #E0E0E0;
+            padding: 10px;
+
+            /*margin: 0; */
+           
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            color: #25336e;
+        }
+        .container img{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+           
+        }
+        .container h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color:  black;
+            margin-bottom: 10px;
+            
+        }
+        .container h1 span {
+            color:  #8474b7;
+        }
+        .container p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: black;
+            line-height: 1.3;
+        }
+        .barra-lateral{
+            display: flex;
+            position: fixed;
+            top:20px;
+            right: 20px;
+            width: 300px;
+            height: 84vh;
+            padding: 40px;
+            background-color: #130f3a;
+            border-radius: 10px;
+            border: 2px solid white ;
+            box-shadow:  0 8px 15px rgba(0, 0, 0, 0.4);
+            color: #dededd;
+        }
+
+        .barra-lateral aside h2{
+            font-size: 1.5rem;
+            color: #dededd;
+            margin-bottom: 10px;
+        }
+        .barra-lateral aside ul {
+            list-style: none;
+            padding: 0;
+        }
+        .barra-lateral aside ul li{
+            margin: 5px 0;
+            font-size: 1.2rem;
+            color: color 0.3s ease;
+        }
+        .barra-lateral aside ul li:hover{
+            color:#6A0DAD;
+            font-weight: bold;
+        }
+
+        .conteudo-perfil{
+            position: absolute;
+            top: 5%;
+            left: 20px;
+            padding: 20px;
+            border-radius: 15px 0 0 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+            color: #dededd;
+            width: 260px;
+            background-color: #130f3a;
+        }
+        .conteudo-perfil:hover{
+            transform: translateY(5px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+        }
+
+        .conteudo-perfil p{
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #E0E0E0;
+        }
+        .conteudo-perfil p strong{
+            color: #E0E0E0;
+        }
+
+        .cards{
+           display: flex;
+           justify-content: center;
+           gap: 20px;
+           width: 90%;
+           max-width: 900px;
+           margin-top: 30px;
+           border: 2px solid white;
+           box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        }
+        .card{
+            background-color: #130f3a;
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            color: #dededd;
+        }
+        .card:hover{
+            transform: translateY(5px);
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        .card h2{
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #dededd;
+        }
+        .card p{
+            color: white;
+        }
+
+        footer{
+            background-color:  #130f3a;
+            color: #dededd;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            right: 0%;
+            box-shadow:  0 8px 15px rgba(0, 0, 0, 0.4);
+            border-top: 2px solid  #8263F2;
+
+            /*background: linear-gradient(135deg, #D6D6D6, #A58EDC);*/
+        }
+
+        
+    
+    </style>
+
+</head>
+<body>
+   <div class="container">
+        <img src="img/foto.png" alt="">
+        <h1>Olá! Sou <span> Nora Margaro </span></h1>
+        <p>Uma desenvolvedora web apaixonado por criar experiências digitais inovadoras. Com experiência em HTML, CSS e JavaScript, adoro transformar ideias em interfaces intuitivas e funcionais.</p>
+    <div class="conteudo-perfil">
+        <aside>
+            <h2>Infomações Contato: </h2>
+            <p><strong>Localização:</strong> São Paulo, Brasil</p>
+            <p><strong>Faculdade:</strong> Engenharia de Sofwere</p>
+            <p><strong> Email: </strong> nora@gmail.com </p>
+        </aside>
+    </div>
+       
+         <main class="cards">
+            <section class="card">
+                <h2>Biografa</h2>
+                <p> BiografiaPessoal tenho 20 anos e gosto de aprender linguagens novas de programação</p>
+            </section>
+            <section class="card">
+                <h2> Experiencias</h2>
+                <p>Desenvolvmento web, python, CSS HTML </p>
+            </section>
+            <section class="card">
+                <h2>Projetos</h2>
+                <p>Desenvolvimento de um aplicativo mobile para uma startup</p>
+            </section>
+            <section class="card">
+                <h2>Ultimos Cursos </h2>
+                <p> DBAMYSQL, ReactNative, Next.js</p>
+            </section>
+        </main> 
+
+     <div class="barra-lateral">
+        <aside>
+            <h2>Hard Skils</h2>
+            <ul>
+                <li>Java</li>
+                <li>ReactNative</li>
+                <li>Design</li>
+            </ul>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Ingles</li>
+                <li>Espanhol</li>
+                <li>Alemão</li>
+            </ul>
+            <h2>Interesses na area</h2>
+            <ul>
+                <li>Desing</li>
+                <li>Back-End developed</li>
+                <li>Font-End developed</li>
+            </ul>
+        </aside>
+    </div> 
+   
+    
+    <footer>
+        <p style="color: white;">Redes Sociais:</p>
+        <a href="https://www.linkedin.com/" style="color: white;">Linkedin!</a>
+        <a href="https://www.instagram.com/#" style="color: white;">Instagram!</a>
+    </footer> 
+   
+</body>
+</html>
