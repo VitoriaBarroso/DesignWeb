@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula loop</title>
+</head>
+<body>
+    <form id="formx">
+        <h1>Form para if else</h1><br><br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" placeholder="Digite sua idade" required>
+        <br><br>
+        <label for="acompanhado">Acompanhado:</label>
+        <input type="text" id="acompanhado" placeholder="Está acompanhado? (sim/nao)" required>
+        <br><br>
+        <button type="submit">OK</button>
+    </form>
+
+    <main id="app"></main> <!-- Mensagens serão exibidas aqui -->
+
+    <form id="forms"><br>
+        <h1>Form para switch</h1><br>
+        <label for="dia">Dia:</label>
+        <input type="number" id="dia" placeholder="Digite o dia" required>
+        <button type="submit">Qual o Dia</button> <!-- Botão com type="submit" --> <br>
+    </form>
+   
+    <main id="app"></main>
+    <script src="decisao.js" defer></script> 
+    <script src="switch.js"></script>
+</body>
+</html>
+
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
