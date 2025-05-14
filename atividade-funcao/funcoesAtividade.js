@@ -23,6 +23,7 @@ const fila = [];
 btnSomaArray.addEventListener("click", () => {
     const numeros = inputSomaArray.value.split(",").map(Number)
     const soma = somaArray(numeros);
+    //const simbulo = numemeros.join("+") // pode fazer a conta com + achei viualemnte melhor!!
     resultadoSoma.innerHTML = `A soma dos números é: ${soma}`
 })
 
@@ -67,7 +68,7 @@ function encontrarMaior(encontrar) {
         return maior
 }
 
-// fila de atendimento // // pesquisei algumas funcoes dentro dos event listener
+// fila de atendimento // // 
 function mostrarFila(){
     if(fila.length === 0) {
         campoFila.innerHTML = "Fila vazia"
